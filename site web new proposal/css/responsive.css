@@ -1,0 +1,120 @@
+@media (max-width: 950px) {
+    /*--------------------------- Menu ---------------------------*/
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      background-color: #000;
+      height: 100%;
+      overflow-y: auto;
+  
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+  
+    .menu li {
+      padding: 20px 0;
+    }
+  
+    .menu a {
+      color: #FFF;
+      line-height: 60px;
+    }
+
+    .open-menu,
+    .close-menu {
+      display: block;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  
+    .close-menu {
+      align-self: flex-end;
+      padding: 20px 15px;
+    }
+  
+    .menu_opened {
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+      outline: none;
+    }
+  
+    .topheader{
+      height: 100px;
+    }
+  
+    .logo img{
+      width: 100px;
+      height: 100px;
+    }
+}
+
+@media screen and (min-width: 552px){
+	.elemento-banner-img-movil {
+		display: none;
+	}
+}
+
+/*---------------------------MOVIL---------------------------*/
+@media screen and (max-width: 550px) {
+  /*---------------------------BANNER MOVIL---------------------------*/
+    .container-element-img-banner {
+		display: none;
+	}
+    .elemento-banner-img-movil{
+		display: block;
+        padding-top: 107px;
+	}
+
+  /*---------------------------SECCIONES HOME---------------------------*/
+    .elemento-1-section-2-home .elemento-img-1-section-2-home{
+        width: 100%;
+        margin-bottom: 10px;
+    } 
+    .elemento-2-section-2-home .elemento-img-2-section-2-home{
+        width: 100%;
+    }
+
+    .elemento-1-section-2-home .elemento-img-1-section-2-home{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .elemento-1-section-2-home .elemento-img-2-section-2-home{
+        width: 100%;
+        margin-bottom: 10px;
+    } 
+}
+
+
+/*---------------------------FOOTER---------------------------*/
+@media (max-width: 550px) {
+  .box__footer{
+      justify-content: left;
+      align-items: left;
+      text-align: justify;
+  }
+  .container__footer{
+      justify-content: left;
+      
+  }
+}
+
+@media (max-width: 643px) {
+  .box__footer{
+      justify-content: left;
+      align-items: left;
+      text-align: left;
+  }
+  .container__footer{
+      justify-content: left;
+  }
+}
